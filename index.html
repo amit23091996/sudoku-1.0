@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Soduko</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<body >
+    <!-- <img src="game2.jpg" alt="gamePicture"> -->
+    <div id="goodLuckH">
+        <h1 id="goodLuckButton">good luck</h1>
+    </div>
+    <div id="main">
+
+        <h1> sudoku</h1>
+        <div id="inputUser">
+        <input  id="userName" class="inputWelcome" type="text" placeholder="User Name">
+        <p id="p1" class="p"></p>
+        <input id="password" class="inputWelcome" type="password" placeholder="Password">
+        <p id="p2" class="p"></p>
+    </div>
+    <div id="buttonEnter">
+        <button onclick="buttonEnter()" >Enter</button>
+    </div>
+    <button class="registerButton" onclick="registerForm()" >register</button>
+    </div>
+    <div id="register">
+        <h1>register form</h1>
+        <input type="text" placeholder="First And Last Name" class="inputWelcome">
+        <input type="text" placeholder="Email Address" class="inputWelcome">
+        <input type="text" placeholder="Password" class="inputWelcome">
+        <input type="text" placeholder="Confirm Password" class="inputWelcome">
+        <button class="registerButton" onclick="moveToEnterPage()">register</button>
+        </div>
+    <div id="welcomeGame" >
+        <div id="main3" >
+<!-- sudoku -->
+        </div>
+        <div id="main2">
+            <h1>welcome<span id="userNameSecondPage"></span> </h1> 
+            <p id="levelD">level difficulty</p>
+            <div id="levelButtons">
+            <button onclick="levelsOfSoduko(1)" id="option1" class="levelButton">1</button>
+            <button onclick="levelsOfSoduko(2)" id="option2" class="levelButton">2</button>
+            <button onclick="levelsOfSoduko(3)" id="option3" class="levelButton">3</button>
+        </div>
+    </div>
+    </div>
+<div id="finishAndAgain">
+    <button onclick="checkAllOnClick()" id="finish" class="finishAndAgainButtons">Finish</button>
+    <button onclick="resetGame()" id="again" class="finishAndAgainButtons" >Again</button>
+    <button onclick="hint()" id="hint" class="finishAndAgainButtons">Hint</button>
+    <p id="countdown">10:00</p>
+</div>
+    <script src='welcomePage.js'></script>
+</body>
+</html>
